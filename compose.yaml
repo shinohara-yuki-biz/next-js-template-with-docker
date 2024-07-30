@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ./.docker/app
+    tty: true
+    volumes:
+      - .:/app
+    environment:
+      - WATCHPACK_POLLING=true
+    ports:
+      - '3000:3000'
+      - '6006:6006'

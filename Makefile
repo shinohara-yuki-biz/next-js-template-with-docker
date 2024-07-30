@@ -14,7 +14,7 @@ exec:
 	docker compose -f ${DOCKER_FILE} exec -it ${APP_CONTAINER} bash
 
 dev:
-	docker compose -f ${DOCKER_FILE} exec ${APP_CONTAINER} yarn dev
+	docker compose -f ${DOCKER_FILE} exec ${APP_CONTAINER} npm run dev
 
 sb:
-	docker compose -f ${DOCKER_FILE} exec ${APP_CONTAINER} yarn storybook
+	docker compose -f ${DOCKER_FILE} exec ${APP_CONTAINER} npm run storybook

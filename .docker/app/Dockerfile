@@ -2,4 +2,4 @@ FROM node:20
 
 WORKDIR /app
 
-RUN yarn set version stable
+RUN apt-get update && apt-get install -y xdg-utils
